@@ -40,15 +40,29 @@
         <repository>
             <id>github</id>
             <name>GitHub CATBOSHI Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/catboshi/SnowFlakeDemo</url>
+            <url>https://maven.pkg.github.com/catboshi/snowflakeDemo</url>
         </repository>
     </distributionManagement>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.asciidoctor</groupId>
+                <artifactId>asciidoctor-maven-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>generate-docs</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <backend>html</backend>
+                            <doctype>book</doctype>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
