@@ -1,4 +1,4 @@
-package tech.wedev.snowflake;
+package tech.wedev.util.snowflake;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
