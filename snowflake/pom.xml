@@ -10,7 +10,7 @@
     </parent>
     <groupId>tech.wedev.util</groupId>
     <artifactId>snowflake</artifactId>
-    <version>0.0.1.RELEASE</version>
+    <version>1.0.0.RELEASE</version>
     <packaging>jar</packaging>
     <name>snowFlakeDemo</name>
     <url>http://maven.apache.org</url>
